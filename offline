@@ -1,0 +1,13 @@
+pip install --no-index --find-links=offline_packages mediapipe opencv-python customtkinter ultralytics
+
+
+--no-index = ห้ามออกเน็ตไปหาที่ PyPI, --find-links = ให้หาไฟล์จากโฟลเดอร์นี้แทน
+
+pip download mediapipe opencv-python customtkinter ultralytics \
+  --platform win_amd64 --python-version 311 --implementation cp \
+  --only-binary=:all: \
+  -d /home/aekkart/offline_packages
+
+  pip install --no-index --find-links=D:\offline_packages mediapipe opencv-python customtkinter ultralytics > install_log.txt 2>&1
+
+  pip install --no-index --find-links=D:\offline_packages mediapipe opencv-python customtkinter ultralytics 
